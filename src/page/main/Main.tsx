@@ -26,7 +26,7 @@ export const Main = () => {
     }, []);
 
     return (
-        <div className="main" >
+        <div className="main">
             <div className="main__text">
                 <h1>Hola a Todos, 👋</h1>
             </div>

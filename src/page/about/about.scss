@@ -3,11 +3,12 @@
     flex-direction: column;
     width: 100%;
     background-color: #ededed;
+    height: 100vh;
 
     .title--about {
         font-size: 3ch;
         font-weight: 700;
-        font-family: car(--font);
+        font-family: var(--font);
         font-style: italic;
         border-bottom: 3px solid #111;
     }

@@ -6,16 +6,40 @@
 
   --font: "Poppins", sans-serif;
   --bg-color: #ededed;
+  --light-color: #fafafa;
+  --dark-color: #111;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
-#root {
-  height: 100vh;
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black var(--dark-color);
 }
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--light-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 3px solid var(--dark-color);
+}
+
+

@@ -20,18 +20,15 @@ export const Sidebar = () => {
                 </div>
             </div>
             <div className="sidebar__routes">
-                <a href="/">
+                <a href="#main">
                     <Icon icon="material-symbols:home" />
                     Home</a>
-                <a href="/">
+                <a href="#about">
                     <Icon icon="carbon:result" />
                     Resumen</a>
-                <a href="/">
+                <a href="#projects">
                     <Icon icon="grommet-icons:projects" />
                     Proyectos</a>
-                <a href="/">
-                    <Icon icon="game-icons:skills" />
-                    Skills</a>
                 <a href="/">
                     <Icon icon="ic:baseline-perm-contact-calendar" />
                     Contacto</a>

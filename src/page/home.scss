@@ -19,6 +19,18 @@
     }
 }
 
+#main {
+    height: 98vh;
+}
+
+#about {
+    height: 100vh;
+}
+
+#project {
+    height: 100vh;
+}
+
 @media (min-width: 1100px) {
     .project_home {
         grid-template-areas:
