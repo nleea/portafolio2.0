@@ -1,0 +1,92 @@
+.sidebar {
+    background-color: #040b14;
+    height: inherit;
+    position: fixed;
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        height: 35%;
+
+        &__image {
+            width: 50%;
+            height: 50%;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 10px auto;
+            background-image: url("../../assets/images/me.jpeg");
+            background-position: center;
+            background-size: cover;
+            padding: 5px;
+            border: 10px solid gray;
+        }
+
+        &__name {
+            text-align: center;
+            color: white;
+        }
+
+        &__icon {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            & a {
+                font-size: 25px;
+                background-color: white;
+                border-radius: 100%;
+                padding: 10px;
+                color: black;
+            }
+        }
+    }
+
+    &__routes {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+
+        a {
+            width: 80%;
+            margin: 10px auto;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px;
+            height: 5%;
+            color: lightgray;
+            display: flex;
+            justify-content: flex-start;
+
+            & svg {
+                font-size: 20px;
+                text-align: center;
+                margin-right: 20px;
+            }
+        }
+
+        & a:hover {
+            transform: scale(1.05);
+            color: white;
+            & svg {
+                color: #149ddd;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .sidebar {
+        width: 26%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .sidebar {
+        width: 16.7%;
+    }
+}

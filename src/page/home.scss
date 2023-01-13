@@ -1,0 +1,42 @@
+.project_home {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "content content content"
+        "content content content"
+        "content content content";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: all ease-in-out 0.5s;
+
+    &--content {
+        grid-area: content;
+        background-color: #ededed !important;
+    }
+
+    &--sidebar {
+        transition: all ease-in-out 0.5s;
+    }
+}
+
+@media (min-width: 1100px) {
+    .project_home {
+        grid-template-areas:
+            "side content content"
+            "side content content"
+            "side content content";
+        grid-template-columns: 0.7fr 1fr 1fr;
+
+        &--sidebar {
+            grid-area: side;
+            height: 100vh;
+            transition: all ease-in-out 0.5s;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .project_home {
+        grid-template-columns: 0.4fr 1fr 1fr;
+    }
+}
