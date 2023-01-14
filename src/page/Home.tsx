@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { Sidebar } from "../layout/sidebar/Sidebar";
+import { Navbar } from "../layout/navbar/Navbar";
 import { Main } from "./main/Main";
 import { About } from "./about/About";
 import { Proyectos } from "../page/proyectos/Proyectos";
@@ -8,10 +10,27 @@ import "./home.scss";
 
 export const Home = () => {
 
+    const [menu, setMenu] = useState(false);
+
+    const ResizeMenu = () => {
+        if (window.innerWidth > 1100) {
+            setMenu(true)
+        } else {
+            setMenu(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", ResizeMenu);
+        if (window.innerWidth > 1100) {
+            setMenu(true);
+        }
+    }, [])
+
     return (
         <div className="project_home">
             <div className="project_home--sidebar">
-                <Sidebar />
+                {menu ? <Sidebar /> : <Navbar />}
             </div>
             <div className="project_home--content">
                 <div id="main" >
