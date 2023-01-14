@@ -11,10 +11,10 @@ export const Sidebar = () => {
                     <h2>Nelson De Castro</h2>
                 </div>
                 <div className="sidebar__header__icon">
-                    <a href="/">
+                    <a href="https://github.com/nleea" target="_blank" >
                         <Icon icon="teenyicons:github-outline" ></Icon>
                     </a>
-                    <a href="/">
+                    <a href="https://www.linkedin.com/in/nelson-de-castro-599402196/" target="_blank" >
                         <Icon icon="ant-design:linkedin-outlined" />
                     </a>
                 </div>
