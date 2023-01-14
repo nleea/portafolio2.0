@@ -45,7 +45,7 @@ export const Navbar = () => {
                 <motion.div className="background" variants={sidebar} />
                 <Navigation toggle={toggleOpen} /></> : null}
 
-            <MenuToggle toggle={() => toggleOpen()} />
+            <MenuToggle toggle={() => toggleOpen()}  />
         </motion.nav>
     );
 }
