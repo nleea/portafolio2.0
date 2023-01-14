@@ -38,10 +38,13 @@ export const Navbar = () => {
             animate={isOpen ? "open" : "closed"}
             custom={height}
             ref={containerRef}
-            style={{ position: "fixed" }}
+            style={{ position: "fixed", height: isOpen ? "auto" : "100px", transition: "ease-out .25s", width: "100%" }}
         >
-            <motion.div className="background" variants={sidebar} />
-            <Navigation toggle={toggleOpen} />
+
+            {isOpen ? <>
+                <motion.div className="background" variants={sidebar} />
+                <Navigation toggle={toggleOpen} /></> : null}
+
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
     );

@@ -30,7 +30,7 @@ export const Home = () => {
     return (
         <div className="project_home">
             <div className="project_home--sidebar">
-                {menu ? <Sidebar /> : <Navbar />}
+                {menu ? <Sidebar /> : <Navbar/>}
             </div>
             <div className="project_home--content">
                 <div id="main" >
