@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import Globo from "../../assets/images/hombreglobo.gif";
 import { Icon } from "@iconify/react";
-
+import F1 from "../../assets/images/fondo1.png";
 
 import "./main.scss";
 

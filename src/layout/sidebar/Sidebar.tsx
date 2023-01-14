@@ -29,7 +29,7 @@ export const Sidebar = () => {
                 <a href="#projects">
                     <Icon icon="grommet-icons:projects" />
                     Proyectos</a>
-                <a href="/">
+                <a href="#contacto">
                     <Icon icon="ic:baseline-perm-contact-calendar" />
                     Contacto</a>
             </div>

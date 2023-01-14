@@ -7,8 +7,8 @@ import "./proyectos.scss";
 export const Proyectos = () => {
 
     return (
-        <div style={{ width: "100%", margin: "auto" }} className="project__list"  id="projects">
-            <div className="projects-container" style={{width:"80%",margin:"auto"}} >
+        <div className="project__list"  id="projects">
+            <div className="projects-container" >
                 <span className="title--projects" >Proyectos</span>
                 <div className="project__list__content">
                     {projects.map((pr) => (

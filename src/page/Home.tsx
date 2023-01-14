@@ -2,6 +2,7 @@ import { Sidebar } from "../layout/sidebar/Sidebar";
 import { Main } from "./main/Main";
 import { About } from "./about/About";
 import { Proyectos } from "../page/proyectos/Proyectos";
+import { Contact } from "../page/contacto/Contact";
 
 import "./home.scss";
 
@@ -21,6 +22,9 @@ export const Home = () => {
                 </div>
                 <div id="project" >
                     <Proyectos />
+                </div>
+                <div id="contact" >
+                    <Contact />
                 </div>
             </div>
         </div>
